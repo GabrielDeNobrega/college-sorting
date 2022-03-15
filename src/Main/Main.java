@@ -1,22 +1,18 @@
 package Main;
 
+import java.util.Locale;
 import java.util.Scanner;
-import methods.Readers;
-import methods.BubbleSort;
-import methods.Printer;
+import methods.Menu;
 
 public class Main {
 
 	public static void main(String[] args) {
 
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		Readers read = new Readers();
-		BubbleSort bs = new BubbleSort();
-		Printer pr = new Printer();
+		Menu menu = new Menu();
 
-		int[] a = read.leVetorInt(sc);
-		bs.bs(a);
-		pr.imprimeVetores(a);
+		menu.Repetidor(sc);
 
 	}
 
