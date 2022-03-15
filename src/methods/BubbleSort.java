@@ -2,88 +2,88 @@ package methods;
 
 public class BubbleSort {
 
-	public int[] bs(int a[]) {
+	public int[] bs(int vetor[]) {
 
 		int aux;
 
-		for (int i = 0; i < a.length; i++) {
+		for (int i = 0; i < vetor.length; i++) {
 
-			for (int j = 0; j < a.length - 1; j++) {
+			for (int j = 0; j < vetor.length - 1; j++) {
 
-				if (a[j] > a[j + 1]) {
-					aux = a[j];
-					a[j] = a[j + 1];
-					a[j + 1] = aux;
+				if (vetor[j] > vetor[j + 1]) {
+					aux = vetor[j];
+					vetor[j] = vetor[j + 1];
+					vetor[j + 1] = aux;
 				}
 
 			}
 
 		}
 
-		return a;
+		return vetor;
 	}
 
-	public double[] bs(double a[]) {
+	public double[] bs(double vetor[]) {
 
 		double aux;
 
-		for (int i = 0; i < a.length; i++) {
+		for (int i = 0; i < vetor.length; i++) {
 
-			for (int j = 0; j < a.length - 1; j++) {
+			for (int j = 0; j < vetor.length - 1; j++) {
 
-				if (a[j] > a[j + 1]) {
-					aux = a[j];
-					a[j] = a[j + 1];
-					a[j + 1] = aux;
+				if (vetor[j] > vetor[j + 1]) {
+					aux = vetor[j];
+					vetor[j] = vetor[j + 1];
+					vetor[j + 1] = aux;
 				}
 
 			}
 
 		}
 
-		return a;
+		return vetor;
 	}
 
-	public String[] bs(String a[]) {
+	public String[] bs(String vetor[]) {
 
 		String aux;
 
-		for (int i = 0; i < a.length; i++) {
+		for (int i = 0; i < vetor.length; i++) {
 
-			for (int j = 0; j < a.length - 1; j++) {
+			for (int j = 0; j < vetor.length - 1; j++) {
 
-				if (a[j].compareTo(a[j + 1]) > 0) {
-					aux = a[j];
-					a[j] = a[j + 1];
-					a[j + 1] = aux;
+				if (vetor[j].compareTo(vetor[j + 1]) > 0) {
+					aux = vetor[j];
+					vetor[j] = vetor[j + 1];
+					vetor[j + 1] = aux;
 				}
 
 			}
 
 		}
 
-		return a;
+		return vetor;
 	}
 	
-	public char[] bs(char a[]) {
+	public char[] bs(char vetor[]) {
 
 		char aux;
 
-		for (int i = 0; i < a.length; i++) {
+		for (int i = 0; i < vetor.length; i++) {
 
-			for (int j = 0; j < a.length - 1; j++) {
+			for (int j = 0; j < vetor.length - 1; j++) {
 
-				if (a[j] > a[j + 1]) {
-					aux = a[j];
-					a[j] = a[j + 1];
-					a[j + 1] = aux;
+				if (vetor[j] > vetor[j + 1]) {
+					aux = vetor[j];
+					vetor[j] = vetor[j + 1];
+					vetor[j + 1] = aux;
 				}
 
 			}
 
 		}
 
-		return a;
+		return vetor;
 	}
 
 }
