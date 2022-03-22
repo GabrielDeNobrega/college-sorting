@@ -52,7 +52,7 @@ public class BubbleSort {
 
 			for (int j = 0; j < vetor.length - 1; j++) {
 
-				if (vetor[j].compareTo(vetor[j + 1]) > 0) {
+				if (vetor[j].compareToIgnoreCase(vetor[j + 1]) > 0) {
 					aux = vetor[j];
 					vetor[j] = vetor[j + 1];
 					vetor[j + 1] = aux;

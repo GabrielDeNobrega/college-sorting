@@ -68,7 +68,7 @@ public class SelectionSort {
 
 			for (int j = i + 1; j < vetor.length; j++) {
 
-				if (vetor[j].compareTo(vetor[menor_posicao]) < 0) {
+				if (vetor[j].compareToIgnoreCase(vetor[menor_posicao]) < 0) {
 
 					menor_posicao = j;
 

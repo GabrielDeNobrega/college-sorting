@@ -14,6 +14,8 @@ public class Main {
 
 		menu.Repetidor(sc);
 
+		sc.close();
+
 	}
 
 }

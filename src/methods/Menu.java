@@ -6,16 +6,12 @@ public class Menu {
 
 	public int Escolher(Scanner sc) {
 
-		System.out.printf("***--- MENU ---***%n%n" 
-		+ "**-- Digite o número da operação que deseja realizar --**%n");
-		System.out.printf("1 - Bubble Sort (Inteiros)%n" 
-				+ "2 - Bubble Sort (Doubles)%n" 
-				+ "3 - Bubble Sort (Strings)%n"
-				+ "4 - Bubble Sort (Chars)%n" 
-				+ "5 - Selection Sort (Inteiros)%n" 
-				+ "6 - Selection Sort (Doubles)%n"
-				+ "7 - Selection Sort (Strings)%n" 
-				+ "8 - Selection Sort (Chars)%n");
+		System.out.printf("***--- MENU ---***%n%n" + "**-- Digite o número da operação que deseja realizar --**%n%n");
+		System.out.printf("01 - Bubble Sort (Inteiros)%n" + "02 - Bubble Sort (Doubles)%n" + "03 - Bubble Sort (Strings)%n"
+				+ "04 - Bubble Sort (Chars)%n%n" + "05 - Selection Sort (Inteiros)%n" + "06 - Selection Sort (Doubles)%n"
+				+ "07 - Selection Sort (Strings)%n" + "08 - Selection Sort (Chars)%n%n"
+				+ "09 - Insertion Sort (Inteiros)%n" + "10 - Insertion Sort (Doubles)%n"
+				+ "11 - Insertion Sort (Strings)%n" + "12 - Insertion Sort (Chars)%n%n");
 		int escolha = sc.nextInt();
 
 		return escolha;
@@ -26,56 +22,86 @@ public class Menu {
 		Readers read = new Readers();
 		BubbleSort bs = new BubbleSort();
 		SelectionSort ss = new SelectionSort();
+		InsertionSort is = new InsertionSort();
 		Printer pr = new Printer();
+
+		int[] a;
+		double[] b;
+		String[] c;
+		char[] d;
 
 		switch (escolha) {
 
 		case 1:
-			int[] a = read.leVetorInt(sc);
+			a = read.leVetorInt(sc);
 			bs.bs(a);
 			pr.imprimeVetores(a);
 			break;
 
 		case 2:
-			double[] b = read.leVetorDouble(sc);
+			b = read.leVetorDouble(sc);
 			bs.bs(b);
 			pr.imprimeVetores(b);
 			break;
 
 		case 3:
-			String[] c = read.leVetorString(sc);
+			c = read.leVetorString(sc);
 			bs.bs(c);
 			pr.imprimeVetores(c);
 			break;
 
 		case 4:
-			char[] d = read.leVetorChar(sc);
+			d = read.leVetorChar(sc);
 			bs.bs(d);
 			pr.imprimeVetores(d);
 			break;
 
 		case 5:
-			int[] e = read.leVetorInt(sc);
-			ss.ss(e);
-			pr.imprimeVetores(e);
+			a = read.leVetorInt(sc);
+			ss.ss(a);
+			pr.imprimeVetores(a);
 			break;
 
 		case 6:
-			double[] f = read.leVetorDouble(sc);
-			ss.ss(f);
-			pr.imprimeVetores(f);
+			b = read.leVetorDouble(sc);
+			ss.ss(b);
+			pr.imprimeVetores(b);
 			break;
 
 		case 7:
-			String[] g = read.leVetorString(sc);
-			ss.ss(g);
-			pr.imprimeVetores(g);
+			c = read.leVetorString(sc);
+			ss.ss(c);
+			pr.imprimeVetores(c);
 			break;
 
 		case 8:
-			char[] h = read.leVetorChar(sc);
-			ss.ss(h);
-			pr.imprimeVetores(h);
+			d = read.leVetorChar(sc);
+			ss.ss(d);
+			pr.imprimeVetores(d);
+			break;
+
+		case 9:
+			a = read.leVetorInt(sc);
+			is.is(a);
+			pr.imprimeVetores(a);
+			break;
+
+		case 10:
+			b = read.leVetorDouble(sc);
+			is.is(b);
+			pr.imprimeVetores(b);
+			break;
+			
+		case 11:
+			c = read.leVetorString(sc);
+			is.is(c);
+			pr.imprimeVetores(c);
+			break;
+			
+		case 12:
+			d = read.leVetorChar(sc);
+			is.is(d);
+			pr.imprimeVetores(d);
 			break;
 
 		default:
