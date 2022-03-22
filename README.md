@@ -1,5 +1,5 @@
 <h1 align="center" width="100%">
-   Sorting Algorithms  
+  👽Sorting Algorithms👽  
 </h1>
 
 
