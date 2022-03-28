@@ -159,7 +159,7 @@ public class Menu {
 		return numero;
 
 	}
-	
+
 	public double numeroDesejadoD(Scanner sc) {
 
 		System.out.printf("Qual número deseja encontrar?%n");
@@ -168,7 +168,7 @@ public class Menu {
 		return numero;
 
 	}
-	
+
 	public String palavraDesejada(Scanner sc) {
 
 		System.out.printf("Qual palavra deseja encontrar?%n");
@@ -177,7 +177,7 @@ public class Menu {
 		return palavra;
 
 	}
-	
+
 	public char letraDesejada(Scanner sc) {
 
 		System.out.printf("Qual letra deseja encontrar?%n");
@@ -185,10 +185,10 @@ public class Menu {
 		return palavra;
 
 	}
-	
-	
+
 	public void menuMasterPesquisas(boolean escolha, int[] vetor, Scanner sc) {
 
+		SequentialSearch ss = new SequentialSearch();
 		BinarySearch bs = new BinarySearch();
 		Printer pr = new Printer();
 
@@ -200,7 +200,8 @@ public class Menu {
 			switch (tipo) {
 
 			case 1:
-
+				int posicao = ss.sequentialSearch(vetor, goalNum);
+				pr.imprimePesquisa(posicao, goalNum);
 				break;
 
 			case 2:
@@ -216,9 +217,10 @@ public class Menu {
 		}
 
 	}
-	
+
 	public void menuMasterPesquisas(boolean escolha, double[] vetor, Scanner sc) {
 
+		SequentialSearch ss = new SequentialSearch();
 		BinarySearch bs = new BinarySearch();
 		Printer pr = new Printer();
 
@@ -230,7 +232,8 @@ public class Menu {
 			switch (tipo) {
 
 			case 1:
-
+				int posicao = ss.sequentialSearch(vetor, goalNum);
+				pr.imprimePesquisa(posicao, goalNum);
 				break;
 
 			case 2:
@@ -246,9 +249,10 @@ public class Menu {
 		}
 
 	}
-	
+
 	public void menuMasterPesquisas(boolean escolha, String[] vetor, Scanner sc) {
 
+		SequentialSearch ss = new SequentialSearch();
 		BinarySearch bs = new BinarySearch();
 		Printer pr = new Printer();
 
@@ -260,7 +264,8 @@ public class Menu {
 			switch (tipo) {
 
 			case 1:
-
+				int posicao = ss.sequentialSearch(vetor, goalWord);
+				pr.imprimePesquisa(posicao, goalWord);
 				break;
 
 			case 2:
@@ -276,9 +281,10 @@ public class Menu {
 		}
 
 	}
-	
+
 	public void menuMasterPesquisas(boolean escolha, char[] vetor, Scanner sc) {
 
+		SequentialSearch ss = new SequentialSearch();
 		BinarySearch bs = new BinarySearch();
 		Printer pr = new Printer();
 
@@ -290,7 +296,8 @@ public class Menu {
 			switch (tipo) {
 
 			case 1:
-
+				int posicao = ss.sequentialSearch(vetor, goalLetter);
+				pr.imprimePesquisa(posicao, goalLetter);
 				break;
 
 			case 2:
@@ -306,7 +313,6 @@ public class Menu {
 		}
 
 	}
-	
 
 	public void repetidor(Scanner sc) {
 

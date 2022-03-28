@@ -24,7 +24,7 @@ public class Printer {
 
 		System.out.printf("%n");
 		for (int i = 0; i < a.length; i++) {
-			System.out.printf("Posição %d: %s%n", i, a[i]);
+			System.out.printf("Posição %d: %s%n", i, a[i].toLowerCase());
 		}
 
 	}
@@ -67,7 +67,7 @@ public class Printer {
 	public void imprimePesquisa(int position, String goalWord) {
 
 		if (position != -1) {
-			System.out.printf("A palavra %s foi encontrada na posição %d do vetor!%n", goalWord, position);
+			System.out.printf("A palavra %s foi encontrada na posição %d do vetor!%n", goalWord.toLowerCase(), position);
 
 		} else {
 
