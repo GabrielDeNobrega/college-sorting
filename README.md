@@ -8,6 +8,10 @@
 
 ***
 
-# 🌳 Description
+<h1 align="center">
+ 🌳 Description 🌳
+    </h1>
   
-  A project that I intend to use as a place for practicing sorting algorithms in Java.
+  <h3>
+    A project that I intend to use as a place for practicing sorting algorithms in Java.
+  </h3>
